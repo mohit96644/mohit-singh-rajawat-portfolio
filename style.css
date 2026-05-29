@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth;
+}
+/*Particles Background*/
+#particles-js{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    z-index: -1;
+    pointer-events: none;
+    
+}
+body{
+    background-color: #0f172a;
+    font-family: Arial,sans-serif;
+    overflow-x: hidden;
+}
+section,.navbar,.footer-section{
+    position: relative;
+    z-index: 1;
+}
+/*Navbar*/
+.custom-navbar{
+    background: rgba(15,23,42,0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 999;
+}
+.navbar-brand{
+    font-size: 28px;
+    color: #0dcaf0 !important;
+}
+.nav-link{
+    color: white !important;
+    margin-left: 20px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #0dcaf0 !important;
+}
+/*hero section*/
+.hero-section{
+    padding-top: 80px;
+}
+.hero-section .container{
+    position: relative;
+    z-index: 2;
+}
+.hero-section h1{
+    color:white;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+.hero-name{
+    color: #ffffff;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 5;
+    text-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.profile-img{
+           width: 450px;
+           animation: float 3s ease-in-out infinite;
+}
+/* Floating Animation*/
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*Section Title*/
+.section-title{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*About Section*/
+.about-img{
+    width: auto;
+}
+/*skill Cards*/
+.skill-card{
+    background: rgba(30,41,59, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px 15px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.skill-card:hover{
+    transform: translateY(-10px);
+    background: #0ea5e9;
+    box-shadow: 0 0 25px;
+}
+.skill-icon{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: 0.4s;
+}
+.skill-card:hover .skill-icon{
+    transform: scale(1.1);
+}
+.skill-card h4{
+    font-weight: bold;
+    font-size: 24px;
+}
+/*Resume Button*/
+.resume-btn{
+    transition: 0.4s;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 12px 28px;
+}
+.resume-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #0dcaf0;
+}
+.resume-btn:active{
+    transform: scale(0.95);
+}
+/*Projects Section*/
+.project-card{
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    color: white;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #0dcaf0;
+}
+.project-img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+/*Contact Form*/
+.contact-form input,.contact-form textarea{
+    background: #1e293b;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+.contact-form input :focus,.contact-form textarea :focus{
+    box-shadow: 0 0 10px #0dcaf0;
+    background: #1e293b;
+    color: white;
+}
+/*Footer*/
+.footer-section{
+    background: #020617;
+}
+.social-icons a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    margin-right: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s;
+}
+.social-icons a:hover{
+    background: #0dcaf0;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #0dcaf0;
+}
+/*light mode*/
+.light-mode{
+    background: #f8fafc;
+    color: black;
+}
+.light-mode .navbar{
+    background: rgba(255,255,255,0.8);
+}
+.light-mode .section-title,.light-mode h1,.light-mode h2,.light-mode h3,.light-mode h4,.light-mode p{
+    color: #020617 !important;
+}
+.light-mode .skill-card, .light-mode .project-card,.light-mode .contact-form input,.light-mode .contact-form textarea{
+    background: white;
+    color: black;
+}
+.light-mode .footer-section{
+    background: #e2e8f0;
+}
